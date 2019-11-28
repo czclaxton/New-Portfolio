@@ -1,7 +1,13 @@
 import React from "react";
 
 const SvgContactMeTitle = props => (
-  <svg viewBox="0 0 211.667 34.396" height={130} width={800} {...props}>
+  <svg
+    id="title"
+    viewBox="0 0 211.667 34.396"
+    height={130}
+    width={800}
+    {...props}
+  >
     <g
       style={{
         lineHeight: 2,
@@ -13,8 +19,8 @@ const SvgContactMeTitle = props => (
       fontFamily="Corbel"
       letterSpacing={0}
       wordSpacing={0}
-      fill="#c3f73a"
-      stroke="#c3f73a"
+      fill="#66FCF1"
+      stroke="#66FCF1"
       strokeWidth={1.192}
       strokeLinecap="square"
       strokeLinejoin="bevel"

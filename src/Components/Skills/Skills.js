@@ -1,5 +1,11 @@
 import React from "react";
-import { MainContainer } from "./Skills.styled";
+import {
+  SkillsItem,
+  MainContainer,
+  SkillsList,
+  Header,
+  Text
+} from "./Skills.styled";
 import {
   SubTitle,
   Paragraph,
@@ -7,16 +13,39 @@ import {
 } from "../../Shared_Styles/TextStyles";
 
 const Skills = () => {
+  const skills = [
+    "JavaScript",
+    "React",
+    "HTML",
+    "CSS",
+    "LESS",
+    "Node.js",
+    "Express",
+    "Redux.js",
+    "Python",
+    "Styled Components",
+    "SQL",
+    "RESTful APIs",
+    "Git",
+    "JSON",
+    "Context API",
+    "Socket.io"
+  ];
+
   return (
     <MainContainer>
-      <SubTitle>Skills & Experience</SubTitle>
+      <Header>SKILLS</Header>
       <Paragraph>
-        Quisque nulla justo, gravida scelerisque lobortis in, tincidunt ac orci.
-        Integer placerat sem eu tortor imperdiet, sit amet auctor dolor
-        interdum. Etiam quis lacus condimentum, placerat nisi a, volutpat purus.
-        Nulla laoreet nunc at augue molestie congue. Aliquam blandit nisl eu
-        metus commodo, a sodales augue cursus.
-      </Paragraph>{" "}
+        Cupcake ipsum dolor sit amet wafer gingerbread tart. Chupa chups
+        caramels fruitcake. Bonbon cookie croissant gingerbread macaroon sugar
+        plum soufflé. Marshmallow lollipop cupcake toffee.
+      </Paragraph>
+      <Text>I've worked with...</Text>
+      <SkillsList>
+        {skills.map(skill => {
+          return <SkillsItem key={skill}>{skill}</SkillsItem>;
+        })}
+      </SkillsList>
     </MainContainer>
   );
 };

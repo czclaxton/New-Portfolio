@@ -1,26 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import { MainContainer, Button } from "./Home.styled";
-import {
-  SubTitle,
-  Paragraph,
-  SmallSubTitle
-} from "../../Shared_Styles/TextStyles";
+import { MainContainer, Button, Text } from "./Home.styled";
+import { Paragraph, SmallSubTitle } from "../../Shared_Styles/TextStyles";
 
 const Home = () => {
   return (
     <MainContainer>
-      <SubTitle>Home Page</SubTitle>
-      <Paragraph>
-        Quisque nulla justo, gravida scelerisque lobortis in, tincidunt ac orci.
-        Integer placerat sem eu tortor imperdiet, sit amet auctor dolor
-        interdum. Etiam quis lacus condimentum, placerat nisi a, volutpat purus.
-        Nulla laoreet nunc at augue molestie congue. Aliquam blandit nisl eu
-        metus commodo, a sodales augue cursus.
-      </Paragraph>{" "}
-      <Link to="/contact">
-        <Button>CONTACT ME</Button>
+      <Text>
+        Hello, I'm <span style={{ color: "#66fcf1" }}>Connor Claxton</span>.
+        <br /> I'm a full-stack web developer.
+      </Text>
+
+      <Link to="/work">
+        <Button>VIEW MY WORK</Button>
       </Link>
     </MainContainer>
   );

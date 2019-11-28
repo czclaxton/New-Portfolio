@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import { SkillsItem as Button1 } from "../../About/About.styled";
+import { SkillsItem as Button1 } from "../../Skills/Skills.styled";
 import {
   colors,
   fonts,
@@ -70,7 +70,7 @@ export const SkillList = styled.div`
   display: flex;
   flex-direction: row;
   p {
-    color: ${colors.primary};
+    color: ${colors.text};
     font-size: 1.5rem;
     font-family: ${fonts.body};
   }

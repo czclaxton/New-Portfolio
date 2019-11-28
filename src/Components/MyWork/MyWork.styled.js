@@ -50,4 +50,7 @@ export const FilterButton = styled.div`
   text-transform: uppercase;
   position: relative;
   z-index: 1;
+  &:hover {
+    color: ${colors.primary};
+  }
 `;

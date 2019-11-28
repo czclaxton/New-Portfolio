@@ -1,17 +1,18 @@
 // COLORS
 
 export const colors = {
-  background: "#1c1c1c",
-  primary: "#c3f73a",
-  text: "#e5edcf",
-  dark: "#000",
+  background: "#e1e1e1",
+  primary: "#66fcf1",
+  secondary: "#45829e",
+  text: "#e1e1e1",
+  dark: "#0b0c10",
   navRegular: "#4d4d4e",
   accent1: "#13CDFF"
 };
 
 // RANDOM COLOR PICKER
 export const randomColor = () => {
-  const colorArray = ["#c3f73a", "#4AFF95", "#4AE838", "#39F7E7", "#13CDFF"];
+  const colorArray = ["#66FCF1"];
   const randomNum = Math.floor(Math.random() * colorArray.length);
   const pick = colorArray[randomNum];
   return pick;
@@ -20,8 +21,8 @@ export const randomColor = () => {
 // FONTS
 
 export const fonts = {
-  title: `'Heebo', sans-serif;`,
-  body: `'Open Sans', sans-serif;`
+  title: `'Roboto', sans-serif;`,
+  body: `'Roboto', sans-serif;`
 };
 
 // MEDIA QUERY VARIABLES -- mobile-first

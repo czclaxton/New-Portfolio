@@ -1,7 +1,12 @@
-import styled, { keyframes } from 'styled-components'
-import { Field, Form } from 'formik'
-import { colors, fonts, randomColor, device } from '../../Shared_Styles/Style_Variables/colors'
-import { Paragraph } from '../../Shared_Styles/TextStyles';
+import styled, { keyframes } from "styled-components";
+import { Field, Form } from "formik";
+import {
+  colors,
+  fonts,
+  randomColor,
+  device
+} from "../../Shared_Styles/Style_Variables/colors";
+import { Paragraph } from "../../Shared_Styles/TextStyles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const Col = styled.div`
@@ -13,7 +18,7 @@ export const Col = styled.div`
 export const Row = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: ${props => props.center ? "center" : "space-around"};
+  justify-content: ${props => (props.center ? "center" : "space-around")};
   width: 100%;
   justify-content: space-between;
 `;
@@ -23,11 +28,11 @@ export const Input = styled(Field)`
   border: none;
   padding: 1.5rem;
   font-size: 2rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   margin-bottom: 2rem;
   margin-left: 2rem;
   ::placeholder {
-    color:teal;
+    color: ${colors.secondary};
     font-family: ${fonts.body};
   }
 `;
@@ -39,6 +44,7 @@ export const ParaInput = styled(Input)`
 
 export const StyledForm = styled(Form)`
   display: flex;
+  justify-content: center;
   flex-flow: column nowrap;
   margin: 7rem 0 0 14rem;
   width: 60rem;
@@ -52,76 +58,27 @@ export const Label = styled.label`
   margin: 1rem 0 1rem 2rem;
 `;
 
-const gradient = keyframes`
-    0% {
-        background-position: 14% 0%;
-    }
-    50% {
-        background-position: 87% 100%;
-    }
-    100% {
-        background-position: 14% 0%;
-    }
-`
-
 export const Button = styled.button`
-    margin: .5rem;
-    width: 22rem;
-    display: inline-block;
-    padding: 1rem;
-    font-size: 2.2rem;
-    font-family: ${fonts.body};
-    border: 2px solid rgb(113, 119, 98);
-    background: none;
-    border-radius: .7rem;
-    transition: all 1s ease;
-    color: ${randomColor};
-    align-self: center;
+  margin: 5rem;
+  width: 18rem;
+  display: inline-block;
+  padding: 1.25rem;
+  font-size: 2rem;
+  font-family: ${fonts.body};
+  border: 2px solid ${colors.primary};
+  background: none;
+  border-radius: 0.3rem;
+  transition: all 1s ease;
+  color: ${colors.primary};
+  align-self: center;
 
-    &:hover {
+  &:hover {
     cursor: pointer;
-    color: black;
-    border-color: black;
-    background-color: #f9ffea;
-    transition: all .2s ease;
-    text-shadow: 2px 2px 0 ${colors.primary};
-    box-shadow: 2px 2px 0px 0px ${colors.primary};
-    }
-
-    @media ${device.mobileS} {
-    max-width: 60rem;
-    }
+    color: #45829e;
+    transition: all 0.2s ease;
+    border: 2px solid #45829e;
+  }
 `;
-
-// export const Button = styled.button`
-//     width: 20rem;
-//     border: 3px solid ${colors.primary};
-//     border-radius: .5rem;
-//     padding: 1.5rem;
-//     margin-top: 2rem;
-//     background-color: blue;
-//     background: linear-gradient(120deg, #6559ae, #ff7159, #6559ae);
-//     color: ${colors.primary};
-//     font-size: 1.8rem;
-//     font-family: ${fonts.title};
-//     align-self: flex-end;
-//     cursor: pointer;
-//     animation: gradient 3s ease-in-out infinite;
-//     -webkit-background-clip: text;
-//     -webkit-text-fill-color: transparent;
-
-//     @keyframes gradient {
-//         0% {
-//         background-position: 14% 0%;
-//         }
-//         50% {
-//         background-position: 87% 100%;
-//         }
-//         100% {
-//         background-position: 14% 0%;
-//         }
-//     }
-// `;
 
 export const ErrorText = styled(Paragraph)`
   font-size: 1.4rem;
@@ -145,15 +102,32 @@ const iconAnim = keyframes`
   }
 `;
 
-const delays = [".33s", ".66s", "1s", "1.33s", "1.66s", "2s", "2.33s", "2.66s", "3s", "3.33s",  ]
+const delays = [
+  ".33s",
+  ".66s",
+  "1s",
+  "1.33s",
+  "1.66s",
+  "2s",
+  "2.33s",
+  "2.66s",
+  "3s",
+  "3.33s"
+];
 export const Icon = styled(FontAwesomeIcon)`
   margin: 1.5rem;
   color: ${randomColor};
-  font-size: 1.6rem; 
-  opacity: .5;
+  font-size: 1.6rem;
+  opacity: 0.5;
   animation: ${iconAnim} 2s linear infinite;
   animation-delay: ${props => delays[props.order]};
   align-self: center;
 `;
 
-
+export const Header = styled.h1`
+  color: ${colors.primary};
+  font-family: ${fonts.title};
+  font-size: 6rem;
+  text-align: center;
+  margin-bottom: 25px;
+`;

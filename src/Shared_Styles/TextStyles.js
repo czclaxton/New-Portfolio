@@ -32,7 +32,7 @@ export const SmallSubTitle = styled.h4`
 export const Paragraph = styled.p`
   color: ${colors.text};
   font-family: ${fonts.body};
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   line-height: 2.75rem;
   padding: 1rem;
   margin: 1rem;

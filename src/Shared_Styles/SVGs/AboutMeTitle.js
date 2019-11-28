@@ -13,8 +13,8 @@ const SvgAboutMeTitle = props => (
       fontFamily="Corbel"
       letterSpacing={0}
       wordSpacing={0.2}
-      fill="#c3f73a"
-      stroke="#c3f73a"
+      fill="#66FCF1"
+      stroke="#66FCF1"
       strokeWidth={1.192}
       strokeLinecap="square"
       strokeLinejoin="bevel"
