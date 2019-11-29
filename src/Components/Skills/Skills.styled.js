@@ -74,3 +74,13 @@ export const Text = styled.h3`
   line-height: 5rem;
   margin: 25px auto;
 `;
+
+export const Paragraph = styled.p`
+  color: ${colors.text};
+  font-family: ${fonts.body};
+  font-size: 1.8rem;
+  line-height: 2.75rem;
+  padding: 1rem;
+  margin: 1rem;
+  width: 75%;
+`;

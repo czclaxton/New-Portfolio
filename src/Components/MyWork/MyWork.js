@@ -7,7 +7,8 @@ import {
   DisplayContainer,
   FilterButton,
   FilterButtonWrapper,
-  FilterButtonMenu
+  FilterButtonMenu,
+  Header
 } from "./MyWork.styled";
 import {
   SubTitle,
@@ -20,21 +21,22 @@ const MyWork = () => {
   const [projectList, setProjectList] = useState(projects);
   const [selectedSkill, setSelectedSkill] = useState("All");
 
-  const skillList = ["All", "JavaScript", "React.js", "Node.js"];
-  useEffect(() => {
-    const filtered = projects.filter(project =>
-      project.primarySkills.includes(selectedSkill)
-    );
-    if (selectedSkill === "All") {
-      setProjectList(projects);
-    } else {
-      setProjectList(filtered);
-    }
-  }, [selectedSkill]);
+  // const skillList = ["All", "JavaScript", "React.js", "Node.js"];
+  // useEffect(() => {
+  //   const filtered = projects.filter(project =>
+  //     project.primarySkills.includes(selectedSkill)
+  //   );
+  //   if (selectedSkill === "All") {
+  //     setProjectList(projects);
+  //   } else {
+  //     setProjectList(filtered);
+  //   }
+  // }, [selectedSkill]);
 
   return (
     <MainContainer>
-      <FilterButtonMenu>
+      <Header>PROJECTS</Header>
+      {/* <FilterButtonMenu>
         <FilterButtonWrapper>
           {skillList.map((skill, i) => (
             <FilterButton
@@ -47,7 +49,7 @@ const MyWork = () => {
             </FilterButton>
           ))}
         </FilterButtonWrapper>
-      </FilterButtonMenu>
+      </FilterButtonMenu> */}
       <DisplayContainer>
         {projectList.map((project, i) => {
           return <DisplayCard key={i} project={project} />;

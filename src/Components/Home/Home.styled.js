@@ -33,22 +33,22 @@ export const Button = styled.button`
   font-size: 2rem;
   font-family: ${fonts.body};
   border: 2px solid ${colors.primary};
+  color: ${colors.primary};
   background: none;
   border-radius: 0.3rem;
   transition: all 1s ease;
-  color: ${colors.primary};
   align-self: flex-end;
 
   &:hover {
     cursor: pointer;
-    color: #45829e;
+    color: ${colors.secondary};
     transition: all 0.2s ease;
-    border: 2px solid #45829e;
+    border: 2px solid ${colors.secondary};
   }
 `;
 
 export const Text = styled.h3`
-  color: #e1e1e1;
+  color: ${colors.text};
   font-family: ${fonts.title};
   font-size: 4.5rem;
   text-align: center;

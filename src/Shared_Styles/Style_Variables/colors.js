@@ -4,9 +4,10 @@ export const colors = {
   background: "#e1e1e1",
   primary: "#66fcf1",
   secondary: "#45829e",
-  text: "#e1e1e1",
+  // text: "#e1e1e1",
+  text: "#fff",
   dark: "#0b0c10",
-  navRegular: "#4d4d4e",
+  navRegular: "#6b6e70",
   accent1: "#13CDFF"
 };
 

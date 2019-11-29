@@ -4,13 +4,9 @@ import {
   MainContainer,
   SkillsList,
   Header,
-  Text
+  Text,
+  Paragraph
 } from "./Skills.styled";
-import {
-  SubTitle,
-  Paragraph,
-  SmallSubTitle
-} from "../../Shared_Styles/TextStyles";
 
 const Skills = () => {
   const skills = [
@@ -34,11 +30,12 @@ const Skills = () => {
 
   return (
     <MainContainer>
-      <Header>SKILLS</Header>
+      <Header>SKILLS & EXPERIENCE</Header>
       <Paragraph>
-        Cupcake ipsum dolor sit amet wafer gingerbread tart. Chupa chups
-        caramels fruitcake. Bonbon cookie croissant gingerbread macaroon sugar
-        plum soufflé. Marshmallow lollipop cupcake toffee.
+        I am constantly motivated to learn about the latest technologies for
+        both the frontend or backend. With a very diverse educational background
+        and cultural experiences I work exceptionally well within a team
+        environment.
       </Paragraph>
       <Text>I've worked with...</Text>
       <SkillsList>

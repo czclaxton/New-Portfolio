@@ -20,7 +20,7 @@ export const DisplayContainer = styled.main`
   display: flex;
   flex-flow: row wrap;
   align-content: flex-start;
-  width: 156rem;
+  width: 117rem;
   margin: 10px;
 `;
 
@@ -53,4 +53,13 @@ export const FilterButton = styled.div`
   &:hover {
     color: ${colors.primary};
   }
+`;
+
+export const Header = styled.h1`
+  color: ${colors.primary};
+  font-family: ${fonts.title};
+  font-size: 6rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 25px auto;
 `;

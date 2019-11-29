@@ -22,7 +22,8 @@ const NavBar = () => {
         </ListItem>
 
         <ListItem>
-          <StyledNavLink to="/about">
+          {/* <StyledNavLink to="/about"> */}
+          <StyledNavLink to="/skills">
             <IconSpan>
               <FontAwesomeIcon icon={faUser} />
             </IconSpan>
@@ -32,7 +33,7 @@ const NavBar = () => {
           </StyledNavLink>
         </ListItem>
 
-        <ListItem>
+        {/* <ListItem>
           <StyledNavLink to="/skills">
             <IconSpan>
               <FontAwesomeIcon icon={faCog} />
@@ -41,7 +42,7 @@ const NavBar = () => {
               <LinkText className="LinkText">SKILLS</LinkText>
             </TextSpan>
           </StyledNavLink>
-        </ListItem>
+        </ListItem> */}
 
         <ListItem>
           <StyledNavLink to="/work">

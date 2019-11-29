@@ -35,11 +35,17 @@ export const Input = styled(Field)`
     color: ${colors.secondary};
     font-family: ${fonts.body};
   }
+  &:focus::placeholder {
+    color: transparent;
+  }
 `;
 
 export const ParaInput = styled(Input)`
   height: 20rem;
   margin-left: 2rem;
+  &:focus::placeholder {
+    color: transparent;
+  }
 `;
 
 export const StyledForm = styled(Form)`
@@ -74,17 +80,18 @@ export const Button = styled.button`
 
   &:hover {
     cursor: pointer;
-    color: #45829e;
+    color: ${colors.secondary};
     transition: all 0.2s ease;
     border: 2px solid #45829e;
   }
 `;
 
-export const ErrorText = styled(Paragraph)`
+export const ErrorText = styled.p`
   font-size: 1.4rem;
-  color: ${colors.accent1};
-  margin: -2rem;
+  color: ${colors.primary};
+  // margin: -2rem;
   text-align: right;
+  font-family: ${fonts.body};
 `;
 
 const iconAnim = keyframes`
