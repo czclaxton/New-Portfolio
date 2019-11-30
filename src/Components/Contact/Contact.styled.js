@@ -135,6 +135,7 @@ export const Header = styled.h1`
   color: ${colors.primary};
   font-family: ${fonts.title};
   font-size: 6rem;
+  font-weight: 700;
   text-align: center;
   margin-bottom: 25px;
 `;

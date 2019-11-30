@@ -25,7 +25,8 @@ const Skills = () => {
     "Git",
     "JSON",
     "Context API",
-    "Socket.io"
+    "Socket.io",
+    "Test"
   ];
 
   return (

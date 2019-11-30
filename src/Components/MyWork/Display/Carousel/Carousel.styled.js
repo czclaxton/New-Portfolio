@@ -17,6 +17,7 @@ export const StyledCarousel = styled(Carousel)`
     margin-top: 25% !important;
     border-radius: 3rem 0 0 3rem;
     opacity: 1 !important;
+
     &:hover {
       border: none;
     }
