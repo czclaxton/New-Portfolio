@@ -62,20 +62,5 @@ export const projects = [
       "Droom is a platform that bridges the gap between companies and people searching for jobs. This website is a marketing page for the app and displays introductory information such as a summary and basic pricing.",
     deployedUrl: "https://lambda-bw-droom.github.io/droom-landing/",
     githubUrl: "https://github.com/lambda-bw-droom/droom-landing"
-  },
-  {
-    title: "Alma",
-    image: "https://i.imgur.com/kwjcipE.png",
-    carousel: [
-      "https://i.imgur.com/EZ1dV6v.png",
-      "https://i.imgur.com/5JFgGpQ.png",
-      "https://i.imgur.com/GfDtX3L.png",
-      "https://i.imgur.com/ek3PqQW.png"
-    ],
-    primarySkills: ["test1", "test2"],
-    skills: ["HTML", "CSS", "React.js", "Node.js"],
-    description: "this is a test description",
-    deployedUrl: "https://www.google.com/",
-    githubUrl: ["https://github.com/Lambda-School-Labs/allegiance-fe"]
   }
 ];
