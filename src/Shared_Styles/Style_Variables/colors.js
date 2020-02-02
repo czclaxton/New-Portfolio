@@ -13,7 +13,7 @@ export const colors = {
 
 // RANDOM COLOR PICKER
 export const randomColor = () => {
-  const colorArray = ["#66FCF1"];
+  const colorArray = ["#e74c3c", "#8e44ad", "#3498db", "#2ecc71", "#f1c40f"];
   const randomNum = Math.floor(Math.random() * colorArray.length);
   const pick = colorArray[randomNum];
   return pick;

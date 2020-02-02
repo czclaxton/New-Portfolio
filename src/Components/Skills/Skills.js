@@ -5,7 +5,10 @@ import {
   SkillsList,
   Header,
   Text,
-  Paragraph
+  Paragraph,
+  RotatingDiv,
+  RotatingP,
+  RotatingSpan
 } from "./Skills.styled";
 
 const Skills = () => {
@@ -16,7 +19,7 @@ const Skills = () => {
     "CSS",
     "LESS",
     "Node.js",
-    "Express",
+    "Express.js",
     "Redux.js",
     "Python",
     "Styled Components",
@@ -37,12 +40,23 @@ const Skills = () => {
         and cultural experiences I work exceptionally well within a team
         environment.
       </Paragraph>
-      <Text>I've worked with...</Text>
+
+      <div class="rotating-text">
+        <p>CSS Animation is</p>
+        <p>
+          <span class="word alizarin">awesome.</span>
+          <span class="word wisteria">beautiful.</span>
+          <span class="word peter-river">creative.</span>
+          <span class="word emerald">fabulous.</span>
+          <span class="word sun-flower">interesting.</span>
+        </p>
+      </div>
+      {/* <Text>I've worked with...</Text>
       <SkillsList>
         {skills.map(skill => {
           return <SkillsItem key={skill}>{skill}</SkillsItem>;
         })}
-      </SkillsList>
+      </SkillsList> */}
     </MainContainer>
   );
 };
