@@ -13,6 +13,7 @@ const Skills = () => {
     "JavaScript",
     "React",
     "HTML",
+    "SCSS",
     "CSS",
     "LESS",
     "Node.js",

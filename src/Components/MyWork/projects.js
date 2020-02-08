@@ -16,6 +16,17 @@ export const projects = [
     githubUrl: ["https://github.com/Lambda-School-Labs/allegiance-fe"]
   },
   {
+    title: "React Xylophone",
+    image: "https://i.imgur.com/xt6aEOe.png",
+    carousel: ["https://i.imgur.com/xt6aEOe.png"],
+    primarySkills: ["React.js"],
+    skills: ["HTML", "CSS", "React.js"],
+    description:
+      "A simple react app that mimics the functionality of a xylophone. When a note is clicked a sound plays. The sequence of notes is recorded able to be replayed back.",
+    deployedUrl: "https://react-xylophone.now.sh/",
+    githubUrl: ["https://github.com/czclaxton/react-xylophone"]
+  },
+  {
     title: "Vacation Planner",
     image: "https://i.imgur.com/Jd2myjb.png",
     carousel: [
