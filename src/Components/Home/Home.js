@@ -9,7 +9,7 @@ const Home = () => {
     <MainContainer>
       <Text>
         Hello, I'm <span style={{ color: "#66fcf1" }}>Connor Claxton</span>.
-        <br /> I'm a full-stack web developer.
+        <br /> I'm a software web developer.
       </Text>
 
       <Link to="/work">
