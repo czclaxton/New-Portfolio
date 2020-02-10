@@ -65,12 +65,51 @@ const NavBar = () => {
             </TextSpan>
           </StyledNavLink>
         </ListItem>
+        <ListItem>
+          <a
+            href="https://drive.google.com/uc?export=download&id=1leH-sBr_l2UwpR_VH8LstxmZtx8cX9T6"
+            // download="ConnorClaxton.pdf"
+          >
+            <IconSpan>
+              <ion-icon name="document-outline"></ion-icon>
+            </IconSpan>
+            <TextSpan>
+              <LinkText className="LinkText">RESUME</LinkText>
+            </TextSpan>
+          </a>
+        </ListItem>
       </LinksList>
-      {/* <BottomLinks>
-        <ion-icon name="logo-github-outline"></ion-icon>
-        <ion-icon name="logo-linkedin-outline"></ion-icon>
-        <ion-icon name="document-outline"></ion-icon>
-      </BottomLinks> */}
+      <BottomLinks>
+        <ListItem>
+          <a href="https://github.com/czclaxton" target="_blank">
+            <IconSpanBottom>
+              <ion-icon
+                style={{ fontSize: "18px" }}
+                name="logo-github"
+              ></ion-icon>
+            </IconSpanBottom>
+            {/* <TextSpan>
+              <LinkText className="LinkText">GITHUB</LinkText>
+            </TextSpan> */}
+          </a>
+        </ListItem>
+        <ListItem>
+          <a
+            href="https://www.linkedin.com/in/connor-claxton-958358184/"
+            target="_blank"
+          >
+            <IconSpanBottom>
+              <ion-icon
+                style={{ fontSize: "18px" }}
+                name="logo-linkedin"
+              ></ion-icon>
+            </IconSpanBottom>
+            {/* <TextSpan>
+              <LinkText className="LinkText">LINKEDIN</LinkText>
+            </TextSpan> */}
+          </a>
+        </ListItem>
+      </BottomLinks>
     </Nav>
   );
 };
@@ -89,11 +128,16 @@ const Nav = styled.nav`
 `;
 
 const BottomLinks = styled.ul`
+  position: absolute;
+  bottom: 20px;
+  // left: 8px;
+  color: white;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: flex-end;
+  justify-content: space-around;
+  align-items: center;
   box-sizing: border-box;
-  color: white;
+  width: 100%;
 `;
 
 const LinksList = styled.ul`
@@ -124,6 +168,21 @@ const IconSpan = styled.span`
 
   ${ListItem}:hover & {
     opacity: 0;
+  }
+`;
+
+const IconSpanBottom = styled.span`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: ${colors.navRegular};
+  font-size: 2.25em;
+  position: relative;
+  top: 0.8rem;
+  transition: color 0.3s ease-out;
+
+  ${ListItem}:hover & {
+    color: ${colors.primary};
   }
 `;
 

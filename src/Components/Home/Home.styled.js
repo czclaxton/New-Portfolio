@@ -29,21 +29,23 @@ export const Button = styled.button`
   margin: 5rem;
   width: 18rem;
   display: inline-block;
-  padding: 1.25rem;
+  padding: 1rem 1.5rem 1rem 1.5rem;
   font-size: 2rem;
   font-family: ${fonts.body};
   border: 2px solid ${colors.primary};
   color: ${colors.primary};
   background: none;
   border-radius: 0.3rem;
-  transition: all 1s ease;
+  transition: all 0.3s ease;
   align-self: flex-end;
+ 
 
   &:hover {
     cursor: pointer;
-    color: ${colors.secondary};
-    transition: all 0.2s ease;
-    border: 2px solid ${colors.secondary};
+    background-color: ${colors.primary};
+    color: ${colors.dark}
+    transition: all 0.3s ease;
+    
   }
 `;
 

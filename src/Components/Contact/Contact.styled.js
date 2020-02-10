@@ -68,21 +68,22 @@ export const Button = styled.button`
   margin: 5rem;
   width: 18rem;
   display: inline-block;
-  padding: 1.25rem;
+  padding: 0.75rem 1.25rem 0.75rem 1.25rem;
   font-size: 2rem;
   font-family: ${fonts.body};
   border: 2px solid ${colors.primary};
   background: none;
   border-radius: 0.3rem;
-  transition: all 1s ease;
+  transition: all 0.3s ease;
   color: ${colors.primary};
   align-self: center;
+  letter-spacing: 4px;
 
   &:hover {
     cursor: pointer;
-    color: ${colors.secondary};
-    transition: all 0.2s ease;
-    border: 2px solid #45829e;
+    background-color: ${colors.primary};
+    color: ${colors.dark}
+    transition: all 0.3s ease;
   }
 `;
 
