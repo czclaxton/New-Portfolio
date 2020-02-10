@@ -27,6 +27,8 @@ export const randomColor = () => {
 export const fonts = {
   title: `'Roboto', sans-serif;`,
   body: `'Roboto', sans-serif;`
+  // title: `'Montserrat', sans-serif;`,
+  // body: `'Montserrat', sans-serif;;`
 };
 
 // MEDIA QUERY VARIABLES -- mobile-first
