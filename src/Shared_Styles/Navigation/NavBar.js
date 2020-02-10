@@ -13,7 +13,7 @@ const NavBar = () => {
         <ListItem>
           <StyledNavLink activeClassName="active" exact to="/">
             <IconSpan>
-              <FontAwesomeIcon icon={faHome} />
+              <ion-icon name="home-outline"></ion-icon>
             </IconSpan>
             <TextSpan>
               <LinkText className="LinkText">HOME</LinkText>
@@ -25,7 +25,7 @@ const NavBar = () => {
           {/* <StyledNavLink to="/about"> */}
           <StyledNavLink to="/skills">
             <IconSpan>
-              <FontAwesomeIcon icon={faUser} />
+              <ion-icon name="person-outline"></ion-icon>
             </IconSpan>
             <TextSpan>
               <LinkText className="LinkText">ABOUT</LinkText>
@@ -47,7 +47,7 @@ const NavBar = () => {
         <ListItem>
           <StyledNavLink to="/work">
             <IconSpan>
-              <FontAwesomeIcon icon={faEye} />
+              <ion-icon name="eye-outline"></ion-icon>
             </IconSpan>
             <TextSpan>
               <LinkText className="LinkText">WORK</LinkText>
@@ -58,7 +58,7 @@ const NavBar = () => {
         <ListItem>
           <StyledNavLink to="/contact">
             <IconSpan>
-              <FontAwesomeIcon icon={faEnvelope} />
+              <ion-icon name="mail-outline"></ion-icon>
             </IconSpan>
             <TextSpan>
               <LinkText className="LinkText">CONTACT</LinkText>
@@ -66,6 +66,11 @@ const NavBar = () => {
           </StyledNavLink>
         </ListItem>
       </LinksList>
+      {/* <BottomLinks>
+        <ion-icon name="logo-github-outline"></ion-icon>
+        <ion-icon name="logo-linkedin-outline"></ion-icon>
+        <ion-icon name="document-outline"></ion-icon>
+      </BottomLinks> */}
     </Nav>
   );
 };
@@ -83,10 +88,19 @@ const Nav = styled.nav`
   z-index: 10;
 `;
 
+const BottomLinks = styled.ul`
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  color: white;
+`;
+
 const LinksList = styled.ul`
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-around;
+  align-items: center;
   box-sizing: border-box;
 `;
 
