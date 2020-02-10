@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   colors,
   fonts,
@@ -37,27 +37,32 @@ const Skills = () => {
     "Socket.io"
   ];
 
-  // const colors = [
-  //   { alizarin: "#e74c3c" },
-  //   { wisteria: "#8e44ad" },
-  //   { peterRiver: "#3498db" },
-  //   { emerald: "#2ecc71" },
-  //   { sunFlower: "#f1c40f" }
-  // ];
+  const colors = ["#e74c3c", "#8e44ad", "#3498db", "#2ecc71", "sunFlower"];
 
-  // const [div, setDiv] = useState("rotating-text");
-  // const [span, setSpan] = useState(`word `);
+  const [div, setDiv] = useState("rotating-text");
+  // const [span, setSpan] = useState(`word`);
+  const [index, setIndex] = useState(0);
+
+  const [currentSkill, setCurrentSkill] = useState();
+  const [color, setColor] = useState();
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex(index => index + 1);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
 
   // let words = skills;
   // console.log(words);
   // words.forEach(word => {
   //   let letters = word.split("");
   //   word = "";
-  //   console.log('word', word)
+  //   console.log("word", word);
   //   letters.forEach(letter => {
   //     let spanEl = React.createElement("span");
   //     spanEl = letter;
-  //     setSpan(`letter`)
+  //     setSpan(`letter`);
   //     word += spanEl;
   //   });
   // });
@@ -103,16 +108,16 @@ const Skills = () => {
         environment.
       </Paragraph>
 
-      {/* <div className={`${div}`}>
-        <p>My skills include</p>
+      <div className={`${div}`}>
+        <p>My skills include </p>
         <p>
-          <span class="word alizarin">awesome.</span>
-          <span class="word wisteria">beautiful.</span>
-          <span class="word peter-river">creative.</span>
-          <span class="word emerald">fabulous.</span>
-          <span className={`${span} sun-flower`}>interesting.</span>
+          <span
+          // className={`${span} ${color}`}
+          >
+            {`${skills[index]}`}
+          </span>
         </p>
-      </div> */}
+      </div>
       {/* <Text>I've worked with...</Text>
       <SkillsList>
         {skills.map(skill => {
