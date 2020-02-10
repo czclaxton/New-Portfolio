@@ -13,7 +13,7 @@ export const projects = [
     description:
       "A sports specific social network enabling fans to build communities around their favorite teams. Users can create and join groups in which they are able to post, like, and comment. Data and notifications are updated in real time using Socket.io.",
     deployedUrl: "https://www.allegiance17.com/",
-    githubUrl: ["https://github.com/Lambda-School-Labs/allegiance-fe"]
+    githubUrl: ["https://github.com/Lambda-School-Labs/allegiance-be"]
   },
   {
     title: "Vacation Planner",
@@ -32,20 +32,18 @@ export const projects = [
     githubUrl: ["https://github.com/build-week-vacation-planner/Front-end"]
   },
   {
-    title: "Tipsease",
-    image: "https://i.imgur.com/fevhJpu.png",
+    title: "Treasure Hunter",
+    image: "https://i.imgur.com/hf6i5Gt.png",
     carousel: [
-      "https://i.imgur.com/3sfi5UR.png",
-      "https://i.imgur.com/AQxgrK2.png",
-      "https://i.imgur.com/xBi6G8i.png",
-      "https://i.imgur.com/Em9dQzE.png"
+      "https://i.imgur.com/hf6i5Gt.png",
+      "https://i.imgur.com/h8xizX9.png"
     ],
-    primarySkills: ["React.js", "Node.js"],
-    skills: ["HTML", "CSS", "React.js"],
+    primarySkills: ["React.js", "Node.js", "Python"],
+    skills: ["HTML", "CSS", "React.js", "Python"],
     description:
-      "Tipsease lets everyone tip their servers directly. If a user signs up as a customer they will be able to search and input an amount to tip servers via the server's profile. A server can login to view their updated tip total.",
-    deployedUrl: "https://laughing-bassi-45295e.netlify.com/",
-    githubUrl: ["https://github.com/sep2019-bw-tipsease/backend"]
+      "A dashboard user interface which communicates with a backend API to traverse a map and interact with the game. The use of data structures and algorithms will aid in efficiently completing the game.",
+    deployedUrl: "https://treasure-hunter-miner.netlify.com/admin/dashboard",
+    githubUrl: ["https://github.com/Jazeera-Tul-Kunz"]
   },
   {
     title: "Droom",

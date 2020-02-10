@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import {
   colors,
   fonts,
-  device
+  device,
+  randomColor
 } from "../../Shared_Styles/Style_Variables/colors";
 
 import {
@@ -34,69 +35,31 @@ const Skills = () => {
     "Git",
     "JSON",
     "Context API",
-    "Socket.io"
+    "Socket.io",
+    "Heroku",
+    "PostgreSQL"
   ];
 
-  const colors = ["#e74c3c", "#8e44ad", "#3498db", "#2ecc71", "sunFlower"];
+  // const colors = ["#e74c3c", "#8e44ad", "#3498db", "#2ecc71", "#f1c40f"];
 
   const [div, setDiv] = useState("rotating-text");
-  // const [span, setSpan] = useState(`word`);
   const [index, setIndex] = useState(0);
 
   const [currentSkill, setCurrentSkill] = useState();
   const [color, setColor] = useState();
 
+  console.log("color", color);
+  console.log("index", index);
   useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex(index => index + 1);
+    const interval = setInterval(_ => {
+      setIndex((index + 1) % skills.length);
     }, 3000);
-    return () => clearInterval(interval);
-  }, []);
+    return _ => clearInterval(interval);
+  });
 
-  // let words = skills;
-  // console.log(words);
-  // words.forEach(word => {
-  //   let letters = word.split("");
-  //   word = "";
-  //   console.log("word", word);
-  //   letters.forEach(letter => {
-  //     let spanEl = React.createElement("span");
-  //     spanEl = letter;
-  //     setSpan(`letter`);
-  //     word += spanEl;
-  //   });
-  // });
-
-  // let currentWordIndex = 0;
-  // let maxWordIndex = words.length - 1;
-  // words[currentWordIndex].style.opacity = "1";
-
-  // let rotateText = () => {
-  //   let currentWord = words[currentWordIndex];
-  //   let nextWord =
-  //     currentWordIndex === maxWordIndex
-  //       ? words[0]
-  //       : words[currentWordIndex + 1];
-  //   // rotate out letters of current word
-  //   Array.from(currentWord.children).forEach((letter, i) => {
-  //     setTimeout(() => {
-  //       letter.className = "letter out";
-  //     }, i * 80);
-  //   });
-  //   // reveal and rotate in letters of next word
-  //   nextWord.style.opacity = "1";
-  //   Array.from(nextWord.children).forEach((letter, i) => {
-  //     letter.className = "letter behind";
-  //     setTimeout(() => {
-  //       letter.className = "letter in";
-  //     }, 340 + i * 80);
-  //   });
-  //   currentWordIndex =
-  //     currentWordIndex === maxWordIndex ? 0 : currentWordIndex + 1;
-  // };
-
-  // rotateText();
-  // setInterval(rotateText, 4000);
+  useEffect(() => {
+    setColor(randomColor());
+  }, [index]);
 
   return (
     <MainContainer>
@@ -108,14 +71,13 @@ const Skills = () => {
         environment.
       </Paragraph>
 
-      <div className={`${div}`}>
-        <p>My skills include </p>
+      <div className="rotating-text">
+        <p style={{ marginRight: "7px" }}>My skills include </p>
         <p>
           <span
-          // className={`${span} ${color}`}
-          >
-            {`${skills[index]}`}
-          </span>
+            style={{ color: color }}
+            className="word"
+          >{`${skills[index]}`}</span>
         </p>
       </div>
       {/* <Text>I've worked with...</Text>
