@@ -46,24 +46,46 @@ export const SkillsList = styled.ul`
 `;
 
 export const SkillsItem = styled.button`
-  margin: 1rem;
+  margin: 5rem;
+  width: 18rem;
   display: inline-block;
-  padding: 1.25rem;
+  padding: 0.75rem 1.25rem 0.75rem 1.25rem;
   font-size: 2rem;
   font-family: ${fonts.body};
-  border: 2px solid ${colors.text};
+  border: 2px solid ${colors.primary};
   background: none;
   border-radius: 0.3rem;
-  transition: all 1s ease;
-  color: ${colors.text};
-  align-self: flex-end;
+  transition: all 0.3s ease;
+  color: ${colors.primary};
+  align-self: center;
+  letter-spacing: 4px;
 
   &:hover {
     cursor: pointer;
-    color: ${colors.primary};
-    transition: all 0.2s ease;
-    border: 2px solid ${colors.primary};
+    background-color: ${colors.primary};
+    color: ${colors.dark}
+    transition: all 0.3s ease;
   }
+
+
+  // margin: 1rem;
+  // display: inline-block;
+  // padding: 0.75rem 1.25rem 0.75rem 1.25rem;
+  // font-size: 2rem;
+  // font-family: ${fonts.body};
+  // border: 2px solid ${colors.text};
+  // background: none;
+  // border-radius: 0.3rem;
+  // transition: all 0.3s ease;
+  // color: ${colors.primary};
+  // align-self: flex-end;
+
+  // &:hover {
+  //   cursor: pointer;
+  //   background-color: ${colors.primary};
+  //   color: ${colors.dark}
+  //   transition: all 0.3s ease;
+  // }
 `;
 
 export const Text = styled.h3`
