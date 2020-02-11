@@ -45,14 +45,14 @@ const Skills = () => {
   const [div, setDiv] = useState("rotating-text");
   const [index, setIndex] = useState(0);
 
-  const [currentSkill, setCurrentSkill] = useState();
+  const [currentSkill, setCurrentSkill] = useState(skills[index]);
   const [color, setColor] = useState();
+  const [isVisible, setIsVisible] = useState(1);
 
-  console.log("color", color);
-  console.log("index", index);
   useEffect(() => {
     const interval = setInterval(_ => {
       setIndex((index + 1) % skills.length);
+      setCurrentSkill(skills[index]);
     }, 3000);
     return _ => clearInterval(interval);
   });
@@ -60,6 +60,20 @@ const Skills = () => {
   useEffect(() => {
     setColor(randomColor());
   }, [index]);
+
+  let maxSkillsIndex = skills.length - 1;
+
+  const rotateText = () => {
+    Array.from(currentSkill).forEach((letter, i) => {
+      setTimeout(() => {
+        return <p className="rotatingText p word letter">{letter}</p>;
+      }, i * 80);
+    });
+
+    setIsVisible(1);
+
+    // Array.from();
+  };
 
   return (
     <MainContainer>
@@ -75,7 +89,7 @@ const Skills = () => {
         <p style={{ marginRight: "7px" }}>My skills include </p>
         <p>
           <span
-            style={{ color: color }}
+            style={{ color: color, opacity: isVisible }}
             className="word"
           >{`${skills[index]}`}</span>
         </p>
