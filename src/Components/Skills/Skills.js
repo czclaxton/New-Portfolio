@@ -72,7 +72,9 @@ const Skills = () => {
 
     setIsVisible(1);
 
-    // Array.from();
+    // Array.from(skills[index + 1]).forEach((letter, i) => {
+
+    // })
   };
 
   return (
