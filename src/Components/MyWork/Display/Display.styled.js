@@ -80,11 +80,11 @@ export const Button = styled(Button1)`
   width: 35%;
   text-align: center;
   opacity: 0;
-  transition: opacity 1s, transform 0.5s ease 0s;
+  transition: opacity 1s, transform 0.3s ease 0s;
 
   ${HoverDiv}:hover & {
     opacity: 1;
     transform: translateY(-60px);
-    transition: opacity 1.2s, transform 0.5s ease 0s;
+    transition: opacity 1.2s, transform 0.3s ease 0s;
   }
 `;
