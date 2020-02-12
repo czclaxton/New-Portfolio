@@ -41,6 +41,17 @@ export const projects = [
     githubUrl: ["https://github.com/Jazeera-Tul-Kunz"]
   },
   {
+    title: "React Timer",
+    image: "https://i.imgur.com/XUrs9f8.png",
+    carousel: ["https://i.imgur.com/XUrs9f8.png"],
+    primarySkills: ["React.js"],
+    skills: ["HTML", "CSS", "React.js"],
+    description:
+      "Built a timer with React and learned some important things about useState and useEffect, specifically learning about how useState modifies values, how useEffect allows us to run code sometimes, and what a 'cleanup function' is.",
+    deployedUrl: "https://reacttimer.netlify.com/",
+    githubUrl: ["https://github.com/czclaxton/react-timer"]
+  },
+  {
     title: "Vacation Planner",
     image: "https://i.imgur.com/Jd2myjb.png",
     carousel: [
