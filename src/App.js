@@ -11,17 +11,17 @@ function App() {
       <AppWrapper>
         <AppRouter />
       </AppWrapper>
-      <div class="night">
-        <div class="shooting_star"></div>
-        <div class="shooting_star"></div>
-        <div class="shooting_star"></div>
-        <div class="shooting_star"></div>
-        <div class="shooting_star"></div>
-        <div class="shooting_star"></div>
-        <div class="shooting_star"></div>
-        <div class="shooting_star"></div>
-        <div class="shooting_star"></div>
-        <div class="shooting_star"></div>
+      <div className="night">
+        <div className="shooting_star"></div>
+        <div className="shooting_star"></div>
+        <div className="shooting_star"></div>
+        <div className="shooting_star"></div>
+        <div className="shooting_star"></div>
+        <div className="shooting_star"></div>
+        <div className="shooting_star"></div>
+        <div className="shooting_star"></div>
+        <div className="shooting_star"></div>
+        <div className="shooting_star"></div>
       </div>
     </>
   );

@@ -106,3 +106,41 @@ export const Paragraph = styled.p`
   margin: 1rem;
   width: 75%;
 `;
+
+export const RotatingDiv = styled.div`
+  font-family: ${fonts.title};
+  font-weight: 600;
+  font-size: 36px;
+  color: white;
+  transform: translateX(-80px);
+`;
+export const RotatingP = styled.p`
+  display: inline-flex;
+  margin: 0;
+  vertical-align: top;
+
+  .word {
+    position: absolute;
+    display: flex;
+    opacity: 0;
+
+    .letter {
+      transform-origin: center center 25px;
+
+      &.out {
+        transform: rotateX(90deg);
+        transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
+      }
+      &.in {
+        transition: 0.38s ease;
+      }
+      &.behind {
+        transform: rotateX(-90deg);
+      }
+    }
+  }
+`;
+
+export const RotatingSpan = styled.span`
+  color: ;
+`;
