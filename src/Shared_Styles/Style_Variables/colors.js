@@ -26,7 +26,7 @@ export const randomColor = () => {
     "#b5ead7",
     "#4343f2",
     "#fcd934",
-    "#588c571"
+    "#588c57"
   ];
   const randomNum = Math.floor(Math.random() * colorArray.length);
   const pick = colorArray[randomNum];

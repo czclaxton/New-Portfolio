@@ -24,14 +24,14 @@ import { Wave1, Wave2 } from "./Wave";
 const Skills = () => {
   const skills = [
     "JavaScript",
-    "React",
-    "HTML",
+    "React.js",
+    "Redux.js",
     "CSS",
-    "LESS",
+    "Python",
     "Node.js",
     "Express.js",
-    "Redux.js",
-    "Python",
+    "HTML",
+    "LESS",
     "Styled Components",
     "SQL",
     "RESTful APIs",
@@ -43,37 +43,39 @@ const Skills = () => {
     "PostgreSQL"
   ];
 
-  // const colors = ["#e74c3c", "#8e44ad", "#3498db", "#2ecc71", "#f1c40f"];
+  const colorsArray = [
+    "#f1c40f",
+    "#3498db",
+    "#4343f2",
+    "#006DBA",
+    "#fcd934",
+    "#73BA55",
+    "#ADA7FC",
+    "#fc5d3d",
+    "#3db0f5",
+    "#E093D2",
+    "#2ecc71",
+    "#D70031",
+    "#F05033",
+    "#E2FBF8",
+    "#0B98F4",
+    "#FFFFFF",
+    "#79589F",
+    "#305E8E"
+  ];
 
-  // const [enteringSkill, setEnteringSkill] = useState(skills[0]);
-  // const [exitingSkill, setExitingSkill] = useState(skills[1]);
   const [index1, setIndex1] = useState(0);
   const [index2, setIndex2] = useState(1);
-
-  // useEffect(() => {
-  //   const interval = setInterval(_ => {
-  //     setIndex1((index1 + 1) % skills.length);
-  //   }, 4000);
-  //   return _ => clearInterval(interval);
-  // });
-
-  // useEffect(() => {
-  //   const interval = setInterval(_ => {
-  //     setIndex2((index2 + 1) % skills.length);
-  //   }, 4000);
-  //   return _ => clearInterval(interval);
-  // });
+  const [color1, setColor1] = useState(colorsArray[0]);
+  const [color2, setColor2] = useState(colorsArray[1]);
 
   setTimeout(() => {
     setIndex1((index1 + 1) % skills.length);
     setIndex2((index2 + 1) % skills.length);
+    setColor1(colorsArray[index2 % colorsArray.length]);
+    setColor2(colorsArray[index1 % colorsArray.length]);
   }, 4000);
 
-  // setTimeout(() => {
-
-  //   console.log("index2", index2);
-  // }, 4000);
-  // console.log("outside");
   return (
     <MainContainer>
       <Header>SKILLS & EXPERIENCE</Header>
@@ -84,11 +86,11 @@ const Skills = () => {
         environment.
       </Paragraph>
 
-      <div className="rotating-text">
-        <p style={{ marginRight: "7px" }}>My skills include </p>
+      <div style={{}} className="rotating-text">
+        <p style={{ marginRight: "10px" }}>My skills include </p>
         <p>
-          <Wave1 text={skills[index1]} />
-          <Wave2 text={skills[index2]} />
+          <Wave1 color1={color1} text={skills[index2]} />
+          <Wave2 color2={color2} text={skills[index1]} />
         </p>
       </div>
     </MainContainer>
