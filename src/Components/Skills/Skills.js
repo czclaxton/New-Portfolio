@@ -24,24 +24,14 @@ import { Wave1, Wave2 } from "./Wave";
 const Skills = () => {
   const skills = [
     "JavaScript",
-<<<<<<< HEAD
     "React",
     "HTML",
-    "SCSS",
     "CSS",
     "LESS",
     "Node.js",
     "Express",
-=======
-    "React.js",
->>>>>>> 12fa82df2ead8bff46efdfa3d3cebbdc62430bbc
     "Redux.js",
-    "CSS",
     "Python",
-    "Node.js",
-    "Express.js",
-    "HTML",
-    "LESS",
     "Styled Components",
     "SQL",
     "RESTful APIs",
@@ -49,10 +39,6 @@ const Skills = () => {
     "JSON",
     "Context API",
     "Socket.io",
-<<<<<<< HEAD
-    "Data Structures",
-    "Algorithms"
-=======
     "Heroku",
     "PostgreSQL"
   ];
@@ -76,7 +62,6 @@ const Skills = () => {
     "#FFFFFF",
     "#79589F",
     "#305E8E"
->>>>>>> 12fa82df2ead8bff46efdfa3d3cebbdc62430bbc
   ];
 
   const [index1, setIndex1] = useState(0);

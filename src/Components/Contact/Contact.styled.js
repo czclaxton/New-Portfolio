@@ -124,9 +124,9 @@ const delays = [
 ];
 export const Icon = styled(FontAwesomeIcon)`
   margin: 1.5rem;
-  color: ${randomColor};
+  color: ${colors.primary};
   font-size: 1.6rem;
-  opacity: 0.5;
+  opacity: 0.75;
   animation: ${iconAnim} 2s linear infinite;
   animation-delay: ${props => delays[props.order]};
   align-self: center;

@@ -57,8 +57,6 @@ export const projects = [
     githubUrl: ["https://github.com/build-week-vacation-planner/Front-end"]
   },
   {
-<<<<<<< HEAD
-=======
     title: "Treasure Hunter",
     image: "https://i.imgur.com/hf6i5Gt.png",
     carousel: [
@@ -73,7 +71,6 @@ export const projects = [
     githubUrl: ["https://github.com/Jazeera-Tul-Kunz"]
   },
   {
->>>>>>> 12fa82df2ead8bff46efdfa3d3cebbdc62430bbc
     title: "Droom",
     image: "https://i.imgur.com/jv5FtmK.png",
     carousel: [
