@@ -489,7 +489,7 @@ a {
 .rotating-text p .word {
   position: absolute;
   display: flex;
-  /* opacity: 0; */
+  opacity: 0;
 }
 
 .rotating-text p .word .letter {

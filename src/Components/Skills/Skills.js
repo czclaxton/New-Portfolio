@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
+
 import {
   colors,
   fonts,
@@ -17,6 +18,8 @@ import {
   RotatingP,
   RotatingSpan
 } from "./Skills.styled";
+
+import { Wave1, Wave2 } from "./Wave";
 
 const Skills = () => {
   const skills = [
@@ -42,41 +45,35 @@ const Skills = () => {
 
   // const colors = ["#e74c3c", "#8e44ad", "#3498db", "#2ecc71", "#f1c40f"];
 
-  const [div, setDiv] = useState("rotating-text");
-  const [index, setIndex] = useState(0);
+  // const [enteringSkill, setEnteringSkill] = useState(skills[0]);
+  // const [exitingSkill, setExitingSkill] = useState(skills[1]);
+  const [index1, setIndex1] = useState(0);
+  const [index2, setIndex2] = useState(1);
 
-  const [currentSkill, setCurrentSkill] = useState(skills[index]);
-  const [color, setColor] = useState();
-  const [isVisible, setIsVisible] = useState(1);
+  // useEffect(() => {
+  //   const interval = setInterval(_ => {
+  //     setIndex1((index1 + 1) % skills.length);
+  //   }, 4000);
+  //   return _ => clearInterval(interval);
+  // });
 
-  useEffect(() => {
-    const interval = setInterval(_ => {
-      setIndex((index + 1) % skills.length);
-      setCurrentSkill(skills[index]);
-    }, 3000);
-    return _ => clearInterval(interval);
-  });
+  // useEffect(() => {
+  //   const interval = setInterval(_ => {
+  //     setIndex2((index2 + 1) % skills.length);
+  //   }, 4000);
+  //   return _ => clearInterval(interval);
+  // });
 
-  useEffect(() => {
-    setColor(randomColor());
-  }, [index]);
+  setTimeout(() => {
+    setIndex1((index1 + 1) % skills.length);
+    setIndex2((index2 + 1) % skills.length);
+  }, 4000);
 
-  let maxSkillsIndex = skills.length - 1;
+  // setTimeout(() => {
 
-  const rotateText = () => {
-    Array.from(currentSkill).forEach((letter, i) => {
-      setTimeout(() => {
-        return <p className="rotatingText p word letter">{letter}</p>;
-      }, i * 80);
-    });
-
-    setIsVisible(1);
-
-    // Array.from(skills[index + 1]).forEach((letter, i) => {
-
-    // })
-  };
-
+  //   console.log("index2", index2);
+  // }, 4000);
+  // console.log("outside");
   return (
     <MainContainer>
       <Header>SKILLS & EXPERIENCE</Header>
@@ -90,18 +87,10 @@ const Skills = () => {
       <div className="rotating-text">
         <p style={{ marginRight: "7px" }}>My skills include </p>
         <p>
-          <span
-            style={{ color: color, opacity: isVisible }}
-            className="word"
-          >{`${skills[index]}`}</span>
+          <Wave1 text={skills[index1]} />
+          <Wave2 text={skills[index2]} />
         </p>
       </div>
-      {/* <Text>I've worked with...</Text>
-      <SkillsList>
-        {skills.map(skill => {
-          return <SkillsItem key={skill}>{skill}</SkillsItem>;
-        })}
-      </SkillsList> */}
     </MainContainer>
   );
 };

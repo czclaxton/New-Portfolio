@@ -12,6 +12,7 @@
     "formik": "^2.0.3",
     "line-awesome": "github:icons8/line-awesome",
     "react": "^16.11.0",
+    "react-animated-text": "^0.1.4",
     "react-dom": "^16.11.0",
     "react-fontawesome": "^1.6.1",
     "react-responsive": "^8.0.3",
