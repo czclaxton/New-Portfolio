@@ -29,7 +29,7 @@ const Skills = () => {
     "CSS",
     "LESS",
     "Node.js",
-    "Express",
+    "Express.js",
     "Redux.js",
     "Python",
     "Styled Components",
