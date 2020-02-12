@@ -475,9 +475,9 @@ a {
 .rotating-text {
   font-family: Lato, sans-serif;
   font-weight: 600;
-  font-size: 52px;
+  font-size: 40px;
   color: white;
-  transform: translate(20%, 100%);
+  transform: translate(25%, 100%);
   width: 100vw;
 }
 

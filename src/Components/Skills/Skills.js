@@ -47,7 +47,6 @@ const Skills = () => {
     "#f1c40f",
     "#3498db",
     "#4343f2",
-    "#006DBA",
     "#fcd934",
     "#73BA55",
     "#ADA7FC",
@@ -57,11 +56,8 @@ const Skills = () => {
     "#2ecc71",
     "#D70031",
     "#F05033",
-    "#E2FBF8",
     "#0B98F4",
-    "#FFFFFF",
-    "#79589F",
-    "#305E8E"
+    "#79589F"
   ];
 
   const [index1, setIndex1] = useState(0);
