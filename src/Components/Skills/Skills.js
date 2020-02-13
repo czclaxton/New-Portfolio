@@ -24,15 +24,15 @@ import { Wave1, Wave2 } from "./Wave";
 const Skills = () => {
   const skills = [
     "JavaScript",
-    "React",
+    "React.js",
     "HTML",
     "CSS",
-    "LESS",
     "Node.js",
     "Express.js",
     "Redux.js",
     "Python",
     "Styled Components",
+    "LESS",
     "SQL",
     "RESTful APIs",
     "Git",
