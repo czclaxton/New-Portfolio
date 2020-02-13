@@ -66,10 +66,7 @@ const NavBar = () => {
           </StyledNavLink>
         </ListItem>
         <ListItem>
-          <a
-            href="https://drive.google.com/uc?export=download&id=1leH-sBr_l2UwpR_VH8LstxmZtx8cX9T6"
-            // download="ConnorClaxton.pdf"
-          >
+          <a href="https://drive.google.com/uc?export=download&id=1sgS2EYrOwA81adfrDYPTWkNMJUZ9BFV-xQObIqtFKlw/">
             <IconSpan>
               <ion-icon name="document-outline"></ion-icon>
             </IconSpan>
