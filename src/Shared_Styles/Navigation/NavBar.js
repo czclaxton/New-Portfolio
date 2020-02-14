@@ -66,7 +66,7 @@ const NavBar = () => {
           </StyledNavLink>
         </ListItem>
         <ListItem>
-          <a href="https://drive.google.com/uc?export=download&id=1rqoT8BydMdC78XfOn7WaMiW1qsG5TW2L/">
+          <a href="https://drive.google.com/uc?export=download&id=1rqoT8BydMdC78XfOn7WaMiW1qsG5TW2L">
             <IconSpan>
               <ion-icon name="document-outline"></ion-icon>
             </IconSpan>
