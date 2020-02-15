@@ -51,7 +51,7 @@ export const ProjectInfo = styled.div`
   opacity: 0;
   transition: opacity 1s, transform 0.5s ease 0s;
   h1 {
-    color: ${randomColor};
+    color: ${colors.primary};
     font-family: ${fonts.title};
     font-size: 2.25rem;
     font-weight: 400;
@@ -80,11 +80,11 @@ export const Button = styled(Button1)`
   width: 35%;
   text-align: center;
   opacity: 0;
-  transition: opacity 1s, transform 0.5s ease 0s;
+  transition: opacity 1s, transform 0.3s ease 0s;
 
   ${HoverDiv}:hover & {
     opacity: 1;
     transform: translateY(-60px);
-    transition: opacity 1.2s, transform 0.5s ease 0s;
+    transition: opacity 1.2s, transform 0.3s ease 0s;
   }
 `;

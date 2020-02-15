@@ -46,24 +46,46 @@ export const SkillsList = styled.ul`
 `;
 
 export const SkillsItem = styled.button`
-  margin: 1rem;
+  margin: 5rem;
+  width: 18rem;
   display: inline-block;
-  padding: 1.25rem;
+  padding: 0.75rem 1.25rem 0.75rem 1.25rem;
   font-size: 2rem;
   font-family: ${fonts.body};
-  border: 2px solid ${colors.text};
+  border: 2px solid ${colors.primary};
   background: none;
   border-radius: 0.3rem;
-  transition: all 1s ease;
-  color: ${colors.text};
-  align-self: flex-end;
+  transition: all 0.3s ease;
+  color: ${colors.primary};
+  align-self: center;
+  letter-spacing: 4px;
 
   &:hover {
     cursor: pointer;
-    color: ${colors.primary};
-    transition: all 0.2s ease;
-    border: 2px solid ${colors.primary};
+    background-color: ${colors.primary};
+    color: ${colors.dark}
+    transition: all 0.3s ease;
   }
+
+
+  // margin: 1rem;
+  // display: inline-block;
+  // padding: 0.75rem 1.25rem 0.75rem 1.25rem;
+  // font-size: 2rem;
+  // font-family: ${fonts.body};
+  // border: 2px solid ${colors.text};
+  // background: none;
+  // border-radius: 0.3rem;
+  // transition: all 0.3s ease;
+  // color: ${colors.primary};
+  // align-self: flex-end;
+
+  // &:hover {
+  //   cursor: pointer;
+  //   background-color: ${colors.primary};
+  //   color: ${colors.dark}
+  //   transition: all 0.3s ease;
+  // }
 `;
 
 export const Text = styled.h3`
@@ -83,4 +105,42 @@ export const Paragraph = styled.p`
   padding: 1rem;
   margin: 1rem;
   width: 75%;
+`;
+
+export const RotatingDiv = styled.div`
+  font-family: ${fonts.title};
+  font-weight: 600;
+  font-size: 36px;
+  color: white;
+  transform: translateX(-80px);
+`;
+export const RotatingP = styled.p`
+  display: inline-flex;
+  margin: 0;
+  vertical-align: top;
+
+  .word {
+    position: absolute;
+    display: flex;
+    opacity: 0;
+
+    .letter {
+      transform-origin: center center 25px;
+
+      &.out {
+        transform: rotateX(90deg);
+        transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
+      }
+      &.in {
+        transition: 0.38s ease;
+      }
+      &.behind {
+        transform: rotateX(-90deg);
+      }
+    }
+  }
+`;
+
+export const RotatingSpan = styled.span`
+  color: ;
 `;

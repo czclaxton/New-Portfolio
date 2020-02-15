@@ -13,7 +13,7 @@ export const projects = [
     description:
       "A sports specific social network enabling fans to build communities around their favorite teams. Users can create and join groups in which they are able to post, like, and comment. Data and notifications are updated in real time using Socket.io.",
     deployedUrl: "https://www.allegiance17.com/",
-    githubUrl: ["https://github.com/Lambda-School-Labs/allegiance-fe"]
+    githubUrl: ["https://github.com/Lambda-School-Labs/allegiance-be"]
   },
   {
     title: "React Xylophone",
@@ -25,6 +25,31 @@ export const projects = [
       "A simple react app that mimics the functionality of a xylophone. When a note is clicked a sound plays. The sequence of notes is recorded able to be replayed back.",
     deployedUrl: "https://react-xylophone.now.sh/",
     githubUrl: ["https://github.com/czclaxton/react-xylophone"]
+  },
+  {
+    title: "Treasure Hunter",
+    image: "https://i.imgur.com/hf6i5Gt.png",
+    carousel: [
+      "https://i.imgur.com/hf6i5Gt.png",
+      "https://i.imgur.com/h8xizX9.png"
+    ],
+    primarySkills: ["React.js", "Node.js", "Python"],
+    skills: ["HTML", "CSS", "React.js", "Python"],
+    description:
+      "A dashboard user interface which communicates with a backend API to traverse a map and interact with the game. The use of data structures and algorithms will aid in efficiently completing the game.",
+    deployedUrl: "https://treasure-hunter-miner.netlify.com/admin/dashboard",
+    githubUrl: ["https://github.com/Jazeera-Tul-Kunz"]
+  },
+  {
+    title: "React Timer",
+    image: "https://i.imgur.com/XUrs9f8.png",
+    carousel: ["https://i.imgur.com/XUrs9f8.png"],
+    primarySkills: ["React.js"],
+    skills: ["HTML", "CSS", "React.js"],
+    description:
+      "Built a timer with React and learned some important things about useState and useEffect, specifically learning about how useState modifies values, how useEffect allows us to run code sometimes, and what a 'cleanup function' is.",
+    deployedUrl: "https://reacttimer.netlify.com/",
+    githubUrl: ["https://github.com/czclaxton/react-timer"]
   },
   {
     title: "Vacation Planner",
@@ -41,22 +66,6 @@ export const projects = [
       "Vacation Planner enables a user to create a profile and plan out their upcoming vacations and having a log of their travel history. Users can input a destination, the starting and ending dates and places/locations of interest.",
     deployedUrl: "https://vacation-planner-web23.netlify.com/",
     githubUrl: ["https://github.com/build-week-vacation-planner/Front-end"]
-  },
-  {
-    title: "Tipsease",
-    image: "https://i.imgur.com/fevhJpu.png",
-    carousel: [
-      "https://i.imgur.com/3sfi5UR.png",
-      "https://i.imgur.com/AQxgrK2.png",
-      "https://i.imgur.com/xBi6G8i.png",
-      "https://i.imgur.com/Em9dQzE.png"
-    ],
-    primarySkills: ["React.js", "Node.js"],
-    skills: ["HTML", "CSS", "React.js"],
-    description:
-      "Tipsease lets everyone tip their servers directly. If a user signs up as a customer they will be able to search and input an amount to tip servers via the server's profile. A server can login to view their updated tip total.",
-    deployedUrl: "https://laughing-bassi-45295e.netlify.com/",
-    githubUrl: ["https://github.com/sep2019-bw-tipsease/backend"]
   },
   {
     title: "Droom",

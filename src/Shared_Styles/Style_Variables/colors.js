@@ -16,7 +16,21 @@ export const colors = {
 
 // RANDOM COLOR PICKER
 export const randomColor = () => {
-  const colorArray = ["#66FCF1"];
+  const colorArray = [
+    "#e74c3c",
+    "#8e44ad",
+    "#3498db",
+    "#2ecc71",
+    "#f1c40f",
+    "#FC6B7B",
+    "#b5ead7",
+    "#fc5d3d",
+    "#3db0f5",
+    "#b5ead7",
+    "#4343f2",
+    "#fcd934",
+    "#588c57"
+  ];
   const randomNum = Math.floor(Math.random() * colorArray.length);
   const pick = colorArray[randomNum];
   return pick;
@@ -27,6 +41,8 @@ export const randomColor = () => {
 export const fonts = {
   title: `'Roboto', sans-serif;`,
   body: `'Roboto', sans-serif;`
+  // title: `'Montserrat', sans-serif;`,
+  // body: `'Montserrat', sans-serif;;`
 };
 
 // MEDIA QUERY VARIABLES -- mobile-first

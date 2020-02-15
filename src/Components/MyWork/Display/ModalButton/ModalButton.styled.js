@@ -79,14 +79,19 @@ export const Paragraph = styled.p`
 `;
 
 export const LearnMore = styled.button`
-  width: 13rem;
-  height: 4rem;
-  font-size: 1.8rem;
-  padding: 0.2rem;
-  background-color: transparent;
-  color: ${colors.primary};
+  margin: 2rem;
+  width: 18rem;
+  display: inline-block;
+  padding: 0.75rem 1.25rem 0.75rem 1.25rem;
+  font-size: 2rem;
+  font-family: ${fonts.body};
   border: 2px solid ${colors.primary};
+  background: none;
   border-radius: 0.3rem;
+  transition: all 0.3s ease;
+  color: ${colors.primary};
+  align-self: center;
+  letter-spacing: 3px;
   transition: opacity 1.2s, transform 0.5s ease 0s;
   ${HoverDiv}:hover & {
     opacity: 1;
@@ -95,8 +100,9 @@ export const LearnMore = styled.button`
   }
   &:hover {
     cursor: pointer;
-    color: ${colors.secondary};
-    border: 2px solid ${colors.secondary};
+    background-color: ${colors.primary};
+    color: ${colors.dark}
+    transition: all 0.3s ease;
   }
 `;
 export const ButtonsDiv = styled.div`
@@ -108,20 +114,24 @@ export const ButtonsDiv = styled.div`
   bottom: 1.5rem;
 `;
 export const LinkButton = styled.button`
-  width: 13rem;
-  height: 4rem;
-  font-size: 1.8rem;
-  font-family: ${fonts.title};
-  padding: 0.2rem;
+  margin: 1rem;
+  width: 18rem;
+  display: inline-block;
+  padding: 0.75rem 1.25rem 0.75rem 1.25rem;
+  font-size: 2rem;
+  font-family: ${fonts.body};
   border: 2px solid ${colors.primary};
-  color: ${colors.primary};
   background: none;
   border-radius: 0.3rem;
-  transition: all 1s ease;
+  transition: all 0.3s ease;
+  color: ${colors.primary};
+  align-self: center;
+  letter-spacing: 2px;
+
   &:hover {
     cursor: pointer;
-    color: ${colors.secondary};
-    transition: all 0.2s ease;
-    border: 2px solid ${colors.secondary};
+    background-color: ${colors.primary};
+    color: ${colors.dark}
+    transition: all 0.3s ease;
   }
 `;

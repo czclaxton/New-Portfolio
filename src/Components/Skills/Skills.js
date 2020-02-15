@@ -1,35 +1,76 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
+
+import {
+  colors,
+  fonts,
+  device,
+  randomColor
+} from "../../Shared_Styles/Style_Variables/colors";
+
 import {
   SkillsItem,
   MainContainer,
   SkillsList,
   Header,
   Text,
-  Paragraph
+  Paragraph,
+  RotatingDiv,
+  RotatingP,
+  RotatingSpan
 } from "./Skills.styled";
+
+import { Wave1, Wave2 } from "./Wave";
 
 const Skills = () => {
   const skills = [
     "JavaScript",
-    "React",
+    "React.js",
     "HTML",
-    "SCSS",
     "CSS",
-    "LESS",
     "Node.js",
-    "Express",
+    "Express.js",
     "Redux.js",
     "Python",
     "Styled Components",
+    "LESS",
     "SQL",
     "RESTful APIs",
     "Git",
     "JSON",
     "Context API",
     "Socket.io",
-    "Data Structures",
-    "Algorithms"
+    "Heroku",
+    "PostgreSQL"
   ];
+
+  const colorsArray = [
+    "#f1c40f",
+    "#3498db",
+    "#4343f2",
+    "#fcd934",
+    "#73BA55",
+    "#ADA7FC",
+    "#fc5d3d",
+    "#3db0f5",
+    "#E093D2",
+    "#2ecc71",
+    "#D70031",
+    "#F05033",
+    "#0B98F4",
+    "#79589F"
+  ];
+
+  const [index1, setIndex1] = useState(0);
+  const [index2, setIndex2] = useState(1);
+  const [color1, setColor1] = useState(colorsArray[0]);
+  const [color2, setColor2] = useState(colorsArray[1]);
+
+  setTimeout(() => {
+    setIndex1((index1 + 1) % skills.length);
+    setIndex2((index2 + 1) % skills.length);
+    setColor1(colorsArray[index2 % colorsArray.length]);
+    setColor2(colorsArray[index1 % colorsArray.length]);
+  }, 4000);
 
   return (
     <MainContainer>
@@ -40,12 +81,14 @@ const Skills = () => {
         and cultural experiences I work exceptionally well within a team
         environment.
       </Paragraph>
-      <Text>I've worked with...</Text>
-      <SkillsList>
-        {skills.map(skill => {
-          return <SkillsItem key={skill}>{skill}</SkillsItem>;
-        })}
-      </SkillsList>
+
+      <div style={{}} className="rotating-text">
+        <p style={{ marginRight: "10px" }}>My skills include </p>
+        <p>
+          <Wave1 color1={color1} text={skills[index2]} />
+          <Wave2 color2={color2} text={skills[index1]} />
+        </p>
+      </div>
     </MainContainer>
   );
 };
