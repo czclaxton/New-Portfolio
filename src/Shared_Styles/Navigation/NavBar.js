@@ -5,111 +5,211 @@ import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faCog } from "@fortawesome/free-solid-svg-icons";
 import { faUser, faEye, faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { useMediaQuery } from "react-responsive";
 
 const NavBar = () => {
+  const isMobile = useMediaQuery({
+    query: "(max-width: 800px)"
+  });
+
   return (
-    <Nav>
-      <LinksList>
-        <ListItem>
-          <StyledNavLink activeClassName="active" exact to="/">
-            <IconSpan>
-              <ion-icon name="home-outline"></ion-icon>
-            </IconSpan>
-            <TextSpan>
-              <LinkText className="LinkText">HOME</LinkText>
-            </TextSpan>
-          </StyledNavLink>
-        </ListItem>
+    <>
+      {isMobile ? (
+        <NavMobile>
+          <LinksListMobile>
+            <ListItemMobile>
+              <StyledNavLinkMobile activeClassName="active" exact to="/">
+                <IconSpanMobile>
+                  <ion-icon name="home-outline"></ion-icon>
+                </IconSpanMobile>
+                <TextSpan>
+                  <LinkText className="LinkText">HOME</LinkText>
+                </TextSpan>
+              </StyledNavLinkMobile>
+            </ListItemMobile>
+            <ListItemMobile>
+              <StyledNavLinkMobile to="/work">
+                <IconSpanMobile>
+                  <ion-icon name="eye-outline"></ion-icon>
+                </IconSpanMobile>
+                <TextSpan>
+                  <LinkText className="LinkText">WORK</LinkText>
+                </TextSpan>
+              </StyledNavLinkMobile>
+            </ListItemMobile>
 
-        <ListItem>
-          {/* <StyledNavLink to="/about"> */}
-          <StyledNavLink to="/skills">
-            <IconSpan>
-              <ion-icon name="person-outline"></ion-icon>
-            </IconSpan>
-            <TextSpan>
-              <LinkText className="LinkText">ABOUT</LinkText>
-            </TextSpan>
-          </StyledNavLink>
-        </ListItem>
+            <ListItemMobile>
+              <StyledNavLinkMobile to="/contact">
+                <IconSpanMobile>
+                  <ion-icon name="mail-outline"></ion-icon>
+                </IconSpanMobile>
+                <TextSpan>
+                  <LinkText className="LinkText">CONTACT</LinkText>
+                </TextSpan>
+              </StyledNavLinkMobile>
+            </ListItemMobile>
+            <ListItemMobile>
+              <a
+                href="https://drive.google.com/uc?export=download&id=1leH-sBr_l2UwpR_VH8LstxmZtx8cX9T6"
+                // download="ConnorClaxton.pdf"
+              >
+                <IconSpanMobile>
+                  <ion-icon name="document-outline"></ion-icon>
+                </IconSpanMobile>
+                <TextSpan>
+                  <LinkText className="LinkText">RESUME</LinkText>
+                </TextSpan>
+              </a>
+            </ListItemMobile>
+          </LinksListMobile>
+        </NavMobile>
+      ) : (
+        <Nav>
+          <LinksList>
+            <ListItem>
+              <StyledNavLink activeClassName="active" exact to="/">
+                <IconSpan>
+                  <ion-icon name="home-outline"></ion-icon>
+                </IconSpan>
+                <TextSpan>
+                  <LinkText className="LinkText">HOME</LinkText>
+                </TextSpan>
+              </StyledNavLink>
+            </ListItem>
 
-        {/* <ListItem>
-          <StyledNavLink to="/skills">
-            <IconSpan>
-              <FontAwesomeIcon icon={faCog} />
-            </IconSpan>
-            <TextSpan>
-              <LinkText className="LinkText">SKILLS</LinkText>
-            </TextSpan>
-          </StyledNavLink>
-        </ListItem> */}
+            <ListItem>
+              {/* <StyledNavLink to="/about"> */}
+              <StyledNavLink to="/skills">
+                <IconSpan>
+                  <ion-icon name="person-outline"></ion-icon>
+                </IconSpan>
+                <TextSpan>
+                  <LinkText className="LinkText">ABOUT</LinkText>
+                </TextSpan>
+              </StyledNavLink>
+            </ListItem>
 
-        <ListItem>
-          <StyledNavLink to="/work">
-            <IconSpan>
-              <ion-icon name="eye-outline"></ion-icon>
-            </IconSpan>
-            <TextSpan>
-              <LinkText className="LinkText">WORK</LinkText>
-            </TextSpan>
-          </StyledNavLink>
-        </ListItem>
+            <ListItem>
+              <StyledNavLink to="/work">
+                <IconSpan>
+                  <ion-icon name="eye-outline"></ion-icon>
+                </IconSpan>
+                <TextSpan>
+                  <LinkText className="LinkText">WORK</LinkText>
+                </TextSpan>
+              </StyledNavLink>
+            </ListItem>
 
-        <ListItem>
-          <StyledNavLink to="/contact">
-            <IconSpan>
-              <ion-icon name="mail-outline"></ion-icon>
-            </IconSpan>
-            <TextSpan>
-              <LinkText className="LinkText">CONTACT</LinkText>
-            </TextSpan>
-          </StyledNavLink>
-        </ListItem>
-        <ListItem>
-          <a href="https://drive.google.com/uc?export=download&id=1rqoT8BydMdC78XfOn7WaMiW1qsG5TW2L">
-            <IconSpan>
-              <ion-icon name="document-outline"></ion-icon>
-            </IconSpan>
-            <TextSpan>
-              <LinkText className="LinkText">RESUME</LinkText>
-            </TextSpan>
-          </a>
-        </ListItem>
-      </LinksList>
-      <BottomLinks>
-        <ListItem>
-          <a href="https://github.com/czclaxton" target="_blank">
-            <IconSpanBottom>
-              <ion-icon
-                style={{ fontSize: "18px" }}
-                name="logo-github"
-              ></ion-icon>
-            </IconSpanBottom>
-            {/* <TextSpan>
+            <ListItem>
+              <StyledNavLink to="/contact">
+                <IconSpan>
+                  <ion-icon name="mail-outline"></ion-icon>
+                </IconSpan>
+                <TextSpan>
+                  <LinkText className="LinkText">CONTACT</LinkText>
+                </TextSpan>
+              </StyledNavLink>
+            </ListItem>
+            <ListItem>
+              <a
+                href="https://drive.google.com/uc?export=download&id=1leH-sBr_l2UwpR_VH8LstxmZtx8cX9T6"
+                // download="ConnorClaxton.pdf"
+              >
+                <IconSpan>
+                  <ion-icon name="document-outline"></ion-icon>
+                </IconSpan>
+                <TextSpan>
+                  <LinkText className="LinkText">RESUME</LinkText>
+                </TextSpan>
+              </a>
+            </ListItem>
+          </LinksList>
+          <BottomLinks>
+            <ListItem>
+              <a href="https://github.com/czclaxton" target="_blank">
+                <IconSpanBottom>
+                  <ion-icon
+                    style={{ fontSize: "18px" }}
+                    name="logo-github"
+                  ></ion-icon>
+                </IconSpanBottom>
+                {/* <TextSpan>
               <LinkText className="LinkText">GITHUB</LinkText>
             </TextSpan> */}
-          </a>
-        </ListItem>
-        <ListItem>
-          <a
-            href="https://www.linkedin.com/in/connor-claxton-958358184/"
-            target="_blank"
-          >
-            <IconSpanBottom>
-              <ion-icon
-                style={{ fontSize: "18px" }}
-                name="logo-linkedin"
-              ></ion-icon>
-            </IconSpanBottom>
-            {/* <TextSpan>
+              </a>
+            </ListItem>
+            <ListItem>
+              <a
+                href="https://www.linkedin.com/in/connor-claxton-958358184/"
+                target="_blank"
+              >
+                <IconSpanBottom>
+                  <ion-icon
+                    style={{ fontSize: "18px" }}
+                    name="logo-linkedin"
+                  ></ion-icon>
+                </IconSpanBottom>
+                {/* <TextSpan>
               <LinkText className="LinkText">LINKEDIN</LinkText>
             </TextSpan> */}
-          </a>
-        </ListItem>
-      </BottomLinks>
-    </Nav>
+              </a>
+            </ListItem>
+          </BottomLinks>
+        </Nav>
+      )}
+    </>
   );
 };
+
+const NavMobile = styled.nav`
+  background-color: ${colors.dark};
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  height: 70px;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 10;
+`;
+
+const LinksListMobile = styled.ul`
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+`;
+
+const ListItemMobile = styled.li`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  box-sizing: border-box;
+`;
+
+const IconSpanMobile = styled.span`
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: ${colors.navRegular};
+  font-size: 3.5rem;
+  position: relative;
+  top: 0.8rem;
+  transition: opacity 0.3s ease-out;
+`;
+
+const StyledNavLinkMobile = styled(NavLink)`
+  &.active {
+    ${IconSpanMobile} {
+      color: ${colors.primary};
+    }
+  }
+`;
+
+// DESKTOP STYLED COMPONENTS
 
 const Nav = styled.nav`
   background-color: ${colors.dark};

@@ -3,26 +3,35 @@ import "./App.css";
 import NavBar from "./Shared_Styles/Navigation/NavBar";
 import AppRouter from "./Components/AppRouter/AppRouter";
 import styled from "styled-components";
+import { useMediaQuery } from "react-responsive";
 
 function App() {
+  const isMobile = useMediaQuery({
+    query: "(max-width: 600px)"
+  });
+
   return (
     <>
       <NavBar />
       <AppWrapper>
         <AppRouter />
       </AppWrapper>
-      <div className="night">
-        <div className="shooting_star"></div>
-        <div className="shooting_star"></div>
-        <div className="shooting_star"></div>
-        <div className="shooting_star"></div>
-        <div className="shooting_star"></div>
-        <div className="shooting_star"></div>
-        <div className="shooting_star"></div>
-        <div className="shooting_star"></div>
-        <div className="shooting_star"></div>
-        <div className="shooting_star"></div>
-      </div>
+      {isMobile ? (
+        <></>
+      ) : (
+        <div className="night">
+          <div className="shooting_star"></div>
+          <div className="shooting_star"></div>
+          <div className="shooting_star"></div>
+          <div className="shooting_star"></div>
+          <div className="shooting_star"></div>
+          <div className="shooting_star"></div>
+          <div className="shooting_star"></div>
+          <div className="shooting_star"></div>
+          <div className="shooting_star"></div>
+          <div className="shooting_star"></div>
+        </div>
+      )}
     </>
   );
 }
