@@ -11,6 +11,7 @@ const NavBar = () => {
   const isMobile = useMediaQuery({
     query: "(max-width: 800px)"
   });
+  // isMobile uses a media query hook, conditionally rendering based on query
 
   return (
     <>
