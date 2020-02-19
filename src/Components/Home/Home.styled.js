@@ -56,3 +56,46 @@ export const Text = styled.h3`
   text-align: center;
   line-height: 5rem;
 `;
+
+export const MainContainerMobile = styled.main`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+  height: 90vh;
+  overflow-y: scroll;
+  /* HIDING SCROLL BAR */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+  font-family: ${fonts.title};
+`;
+
+export const ButtonMobile = styled.button`
+  margin-top: 5rem;
+  width: 30rem;
+  display: inline-block;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  font-size: 2.5rem;
+  font-family: ${fonts.body};
+  border: 2px solid ${colors.primary};
+  color: ${colors.primary};
+  background: none;
+  border-radius: 0.3rem;
+  transition: all 0.3s ease;
+  align-self: flex-end;
+`;
+
+export const TextMobile = styled.h3`
+  color: ${colors.text};
+  font-family: ${fonts.title};
+  font-size: 2.75rem;
+  text-align: center;
+  line-height: 4rem;
+  margin: 3rem;
+`;
