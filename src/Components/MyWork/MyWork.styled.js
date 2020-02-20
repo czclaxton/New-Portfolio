@@ -24,37 +24,6 @@ export const DisplayContainer = styled.main`
   margin: 10px;
 `;
 
-export const FilterButtonMenu = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
-  position: relative;
-`;
-
-export const FilterButtonWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-`;
-
-export const FilterButton = styled.div`
-  color: ${colors.text};
-  font-family: ${fonts.title};
-  font-size: 2rem;
-  padding: 0 40px;
-  margin: 20px 25px;
-  font-weight: 600;
-  cursor: pointer;
-  text-transform: uppercase;
-  position: relative;
-  z-index: 1;
-  &:hover {
-    color: ${colors.primary};
-  }
-`;
-
 export const Header = styled.h1`
   color: ${colors.primary};
   font-family: ${fonts.title};
@@ -62,4 +31,36 @@ export const Header = styled.h1`
   font-weight: 700;
   text-align: center;
   margin: 25px auto;
+`;
+
+// MOBILE COMPONENTS
+
+export const MainContainerMobile = styled.main`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // margin: 0 0 0 14rem;
+  position: absolute;
+  top: 850px;
+  left: 0;
+`;
+
+export const DisplayContainerMobile = styled.main`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  // margin: 30px 10px 10px 10px;
+`;
+
+export const HeaderMobile = styled.h1`
+  color: ${colors.primary};
+  font-family: ${fonts.title};
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 50px auto;
 `;
