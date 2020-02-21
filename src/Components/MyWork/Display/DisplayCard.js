@@ -1,17 +1,14 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
-import { Modal } from 'styled-react-modal';
-import { ModalButton } from './ModalButton/ModalButton';
+import { Modal } from "styled-react-modal";
+import { ModalButton } from "./ModalButton/ModalButton";
 import {
-  CardContainer,
-  Button,
   Card,
   HoverDiv,
   ProjectInfo,
   SkillList,
   Image
 } from "./Display.styled";
-import { colors, fonts } from "../../../Shared_Styles/Style_Variables/colors";
 
 const DisplayCard = props => {
   const {
@@ -33,12 +30,14 @@ const DisplayCard = props => {
           <h1>{title}</h1>
           <SkillList>
             {primarySkills.map((skill, i) => (
-              <p style={{ margin: ".5rem" }} key={i}>{skill}</p>
+              <p style={{ margin: ".5rem" }} key={i}>
+                {skill}
+              </p>
             ))}
           </SkillList>
         </ProjectInfo>
         {/* <Button>Learn More</Button> */}
-        <ModalButton project={props.project}/>
+        <ModalButton project={props.project} />
       </HoverDiv>
       <Image src={image} />
     </Card>
