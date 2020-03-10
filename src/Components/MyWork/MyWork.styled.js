@@ -13,7 +13,7 @@ export const MainContainer = styled.main`
   justify-content: center;
   align-items: flex-start;
   flex-flow: column;
-  margin: 0 0 0 14rem;
+  margin: 0 0 0 5rem;
 `;
 
 export const DisplayContainer = styled.main`

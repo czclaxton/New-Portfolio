@@ -1,5 +1,21 @@
 export const projects = [
   {
+    title: "SocialBee",
+    image: "https://i.imgur.com/krxR4bw.png",
+    carousel: [
+      "https://i.imgur.com/krxR4bw.png",
+      "https://i.imgur.com/rCi6ihb.png",
+      "https://i.imgur.com/JWhXlCx.png",
+      "https://i.imgur.com/cCgsl3c.png"
+    ],
+    primarySkills: ["React.js", "Node.js"],
+    skills: ["HTML", "CSS", "React.js", "Node.js"],
+    description:
+      "A social network platform enabling users to signup, upload a profile picture, and update their profile information. Users also can make post and view posts and like and comment on them to interact.",
+    deployedUrl: "https://social-bee-12b83.firebaseapp.com/",
+    githubUrl: ["https://github.com/socialbee-app"]
+  },
+  {
     title: "Allegiance",
     image: "https://i.imgur.com/kwjcipE.png",
     carousel: [
