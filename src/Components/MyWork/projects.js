@@ -32,6 +32,17 @@ export const projects = [
     githubUrl: ["https://github.com/Lambda-School-Labs/allegiance-be"]
   },
   {
+    title: "Todo App with Typescript",
+    image: "https://i.imgur.com/8xFOrqY.png",
+    carousel: ["https://i.imgur.com/8xFOrqY.png"],
+    primarySkills: ["React.js"],
+    skills: ["HTML", "CSS", "React.js", "TypeScript"],
+    description:
+      "A basic Todo List app that lets you add new todo items to a list and toggle whether they have been completed yet or not. I created this simple app to learn and try out Typescript.",
+    deployedUrl: "https://keen-goldwasser-f2960c.netlify.com/",
+    githubUrl: ["https://github.com/czclaxton/typescript-todo-list"]
+  },
+  {
     title: "React Xylophone",
     image: "https://i.imgur.com/xt6aEOe.png",
     carousel: ["https://i.imgur.com/xt6aEOe.png"],
