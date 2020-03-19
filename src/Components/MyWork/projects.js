@@ -16,6 +16,21 @@ export const projects = [
     githubUrl: ["https://github.com/socialbee-app"]
   },
   {
+    title: "Socket.io Chat App",
+    image: "https://i.imgur.com/7YQmv8R.png",
+    carousel: [
+      "https://i.imgur.com/7YQmv8R.png",
+      "https://i.imgur.com/cEmtiSC.png",
+      "https://i.imgur.com/96xLtAP.png"
+    ],
+    primarySkills: ["React.js", "Node.js"],
+    skills: ["HTML", "CSS", "React.js", "Node.js", "Socket.io"],
+    description:
+      "A chat app that uses websockets to enable real time updates using the Socket.io library. This app allows users to join different chat rooms and message each other in real time. A list of users currently in the chat is displayed to the side as well.",
+    deployedUrl: "https://peaceful-kepler-c4c4f2.netlify.com/",
+    githubUrl: ["https://github.com/czclaxton/chat-app-fe/"]
+  },
+  {
     title: "Allegiance",
     image: "https://i.imgur.com/kwjcipE.png",
     carousel: [
