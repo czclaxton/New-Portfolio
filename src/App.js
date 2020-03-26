@@ -10,8 +10,20 @@ function App() {
       <NavBar />
       <AppWrapper>
         <AppRouter />
+        <div className="night">
+          <div className="shooting_star"></div>
+          <div className="shooting_star"></div>
+          <div className="shooting_star"></div>
+          <div className="shooting_star"></div>
+          <div className="shooting_star"></div>
+          <div className="shooting_star"></div>
+          <div className="shooting_star"></div>
+          <div className="shooting_star"></div>
+          <div className="shooting_star"></div>
+          <div className="shooting_star"></div>
+        </div>
       </AppWrapper>
-      <div className="night">
+      {/* <div className="night">
         <div className="shooting_star"></div>
         <div className="shooting_star"></div>
         <div className="shooting_star"></div>
@@ -22,7 +34,7 @@ function App() {
         <div className="shooting_star"></div>
         <div className="shooting_star"></div>
         <div className="shooting_star"></div>
-      </div>
+      </div> */}
     </>
   );
 }
@@ -30,6 +42,7 @@ function App() {
 const AppWrapper = styled.div`
   display: flex;
   width: 100%;
+  overflow: auto;
 `;
 
 export default App;

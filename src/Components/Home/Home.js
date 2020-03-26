@@ -10,7 +10,7 @@ const Home = () => {
       <Text>
         Hello, I'm{" "}
         <span style={{ color: `${colors.primary}` }}>Connor Claxton</span>.
-        <br /> I'm a software web developer.
+        <br /> I'm a software developer.
       </Text>
 
       <Link to="/work">

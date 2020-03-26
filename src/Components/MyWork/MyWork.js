@@ -23,7 +23,6 @@ const MyWork = () => {
 
   return (
     <MainContainer>
-      <Header>PROJECTS</Header>
       <DisplayContainer>
         {projectList.map((project, i) => {
           return <DisplayCard key={i} project={project} />;

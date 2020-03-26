@@ -22,7 +22,6 @@ const NavBar = () => {
         </ListItem>
 
         <ListItem>
-          {/* <StyledNavLink to="/about"> */}
           <StyledNavLink to="/skills">
             <IconSpan>
               <ion-icon name="person-outline"></ion-icon>
@@ -32,17 +31,6 @@ const NavBar = () => {
             </TextSpan>
           </StyledNavLink>
         </ListItem>
-
-        {/* <ListItem>
-          <StyledNavLink to="/skills">
-            <IconSpan>
-              <FontAwesomeIcon icon={faCog} />
-            </IconSpan>
-            <TextSpan>
-              <LinkText className="LinkText">SKILLS</LinkText>
-            </TextSpan>
-          </StyledNavLink>
-        </ListItem> */}
 
         <ListItem>
           <StyledNavLink to="/work">
@@ -85,9 +73,6 @@ const NavBar = () => {
                 name="logo-github"
               ></ion-icon>
             </IconSpanBottom>
-            {/* <TextSpan>
-              <LinkText className="LinkText">GITHUB</LinkText>
-            </TextSpan> */}
           </a>
         </ListItem>
         <ListItem>
@@ -101,9 +86,6 @@ const NavBar = () => {
                 name="logo-linkedin"
               ></ion-icon>
             </IconSpanBottom>
-            {/* <TextSpan>
-              <LinkText className="LinkText">LINKEDIN</LinkText>
-            </TextSpan> */}
           </a>
         </ListItem>
       </BottomLinks>
