@@ -1,5 +1,36 @@
 export const projects = [
   {
+    title: "SocialBee",
+    image: "https://i.imgur.com/krxR4bw.png",
+    carousel: [
+      "https://i.imgur.com/krxR4bw.png",
+      "https://i.imgur.com/rCi6ihb.png",
+      "https://i.imgur.com/JWhXlCx.png",
+      "https://i.imgur.com/cCgsl3c.png"
+    ],
+    primarySkills: ["React.js", "Node.js"],
+    skills: ["HTML", "CSS", "React.js", "Node.js"],
+    description:
+      "A social network platform enabling users to signup, upload a profile picture, and update their profile information. Users also can make post and view posts and like and comment on them to interact.",
+    deployedUrl: "https://social-bee-12b83.firebaseapp.com/",
+    githubUrl: ["https://github.com/socialbee-app"]
+  },
+  {
+    title: "Socket.io Chat App",
+    image: "https://i.imgur.com/7YQmv8R.png",
+    carousel: [
+      "https://i.imgur.com/7YQmv8R.png",
+      "https://i.imgur.com/cEmtiSC.png",
+      "https://i.imgur.com/96xLtAP.png"
+    ],
+    primarySkills: ["React.js", "Node.js"],
+    skills: ["HTML", "CSS", "React.js", "Node.js", "Socket.io"],
+    description:
+      "A chat app that uses websockets to enable real time updates using the Socket.io library. This app allows users to join different chat rooms and message each other in real time. A list of users currently in the chat is displayed to the side as well.",
+    deployedUrl: "https://peaceful-kepler-c4c4f2.netlify.com/",
+    githubUrl: ["https://github.com/czclaxton/chat-app-fe/"]
+  },
+  {
     title: "Allegiance",
     image: "https://i.imgur.com/kwjcipE.png",
     carousel: [
@@ -14,6 +45,17 @@ export const projects = [
       "A sports specific social network enabling fans to build communities around their favorite teams. Users can create and join groups in which they are able to post, like, and comment. Data and notifications are updated in real time using Socket.io.",
     deployedUrl: "https://www.allegiance17.com/",
     githubUrl: ["https://github.com/Lambda-School-Labs/allegiance-be"]
+  },
+  {
+    title: "Todo App with Typescript",
+    image: "https://i.imgur.com/8xFOrqY.png",
+    carousel: ["https://i.imgur.com/8xFOrqY.png"],
+    primarySkills: ["React.js"],
+    skills: ["HTML", "CSS", "React.js", "TypeScript"],
+    description:
+      "A basic Todo List app that lets you add new todo items to a list and toggle whether they have been completed yet or not. I created this simple app to learn and try out Typescript.",
+    deployedUrl: "https://keen-goldwasser-f2960c.netlify.com/",
+    githubUrl: ["https://github.com/czclaxton/typescript-todo-list"]
   },
   {
     title: "React Xylophone",
